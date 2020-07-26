@@ -1,0 +1,119 @@
+{% extends 'Website/base_layout.html'  %}
+{% load static %}
+
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+<!--============== INTRO ==============-->
+<div class="hero">
+
+      <div class="image_container" id="cf">
+            <img src="{% static 'res/img/PIC2.png' %}" alt="Luis Ramirez" height="580" width="270" class="wow fadeInUp">
+      </div>
+      <div class="header">
+            <h1 class="line anim-typewriter">Automate the boring, grow faster.</h1>
+      </div>
+</div>
+
+<div class="scroll-down"></div>
+<!--============== / ==============-->
+
+
+<!-- ============= FREELANCE ============ -->
+<div class="freelance">
+      <p>creative programmer.</p>
+</div>
+<!-- ============= / ============== -->
+
+
+<!--============== ABOUT ME ==============-->
+<div class="about-me">
+<div class="container-md">
+      <div class="row">
+
+            <div class="col-lg-3 col-sm-12">
+                  <img src="{% static 'res/img/PIC5.jpg' %}" width="100%" id="profile-img">
+            </div>
+
+            <div class="col-lg-8 col-sm-12">
+                  <div class="row" id="title">
+                        <div id="logo-label"><h3>Ed</h3></div>
+                        <span><h4>gar Ramirez</h4></span>
+                        <span id="slogan-label">software freelancer</span>
+                  </div>
+                  <div class="row">
+                        <div class="col-lg-6">
+                              <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </p>
+                        </div>
+                        <div class="col-lg-6">
+                              <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </p>
+                        </div>
+                  </div>
+
+                  <hr class="separator">
+
+                  <div>
+                        <ul class="list-horizontal">
+                              <li><a href="#" class="social-link" id="ig">IG</a></li>
+                              <li><a href="#" class="social-link" id="fb">LI</a></li>
+                              <li><a href="#" class="social-link" id="tw">TW</a></li>
+                              <li><a href="#" class="social-link" id="yt">YT</a></li>
+                              <li><a href="#" class="social-link" id="gh">GH</a></li>
+                              <li><a href="#" class="social-link" id="wa">WA</a></li>
+                        </ul>
+                        <strong><a href="#" class="action-link1">GET IN CONTACT</a></strong>
+                  </div>
+            </div>
+      </div>
+</div>
+</div>
+<!--============== / ================-->
+
+
+<!-- ======================= PILLARS ======================= -->
+<div class="container">
+     <div class="row">
+            <div class="col-12">
+                  <div class="words-container">
+                        <p class="pillars-title">my four pillars</p>
+                        <ul class="words-list">
+                              <li class="wordls-item">passion</li>
+                              <li class="wordls-item">balance</li>
+                              <li class="wordls-item">value</li>
+                              <li class="wordls-item">simple</li>
+                        </ul>
+                  </div>
+            </div>
+      </div> 
+</div>
+      
+
+
+<!-- ==================== EVENT COUNTDOWN ===================== -->
+<div class="container-md event-countdown-container">
+      <div class="event-countdown">
+            <div class="time-container">
+                  <span class="day">
+                        <p class="timer day">27</p>
+                        <p class="timer-label">days</p>
+                  </span>
+                  <span class="min">
+                        <p class="timer">25</p>
+                        <p class="timer-label">min</p>
+                  </span>
+                  <span class="sec">
+                        <p class="timer">10</p>
+                        <p class="timer-label">sec</p>
+                  </span>
+            </div>  
+      </div>
+</div>
+
+{% endblock %}

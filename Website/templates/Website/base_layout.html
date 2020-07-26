@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- Loads -->
+{% load static %}
+
+<html lang="en">
+<head>
+	<title>EDGAR - {% block title %}{% endblock %}</title>
+
+	<!--Metas-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Luis Ramirez">
+	{% block meta %}
+	{% endblock %}
+
+	<!--Styles-->
+	<link rel="stylesheet" href="{% static 'Website/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'Website/css/animate.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--JavaScript-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="{% static 'Website/js/t.min.js' %}"></script>
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="wrapper">
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg">
+			<span id="brand"><a href="{% url 'index' %}">edgar</a></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span id="menu-label">menu</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav" id="menu">
+					<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">about you<span>.</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">interesting<span>.</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">the future<span>.</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">take action<span>.</span></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Side bar -->
+		<nav class="sidebar-nav">
+			<ul class="sidebar-list">
+				<li class="sidebar-item"><a class="sidebar-link" href="#">games</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">web apps</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">desktop</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">mobile</a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="#">A.I.</a></li>
+			</ul>
+		</nav>
+
+		{% block body %}
+		{% endblock %}
+
+		<!-- Footer -->
+
+		<div class="footer">
+			<footer>
+				<h4>Edgar freelance</h4>
+				<h6>©2020</h6>
+			</footer>
+		</div>
+
+	</div>
+
+	<!-- JQuery-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
