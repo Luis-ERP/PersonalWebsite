@@ -25,23 +25,26 @@ SECRET_KEY = '(6^peb6!=o+)a1@xv6m3(6h*r5(oj%%#+fzaav*3cm+vwx$$xn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['edgarwebsite.herokuapp', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'Website',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Custom 
+    'Website',
+    'JobPortfolio',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -120,4 +123,4 @@ USE_TZ = True
 
 # Custom settings
 STATIC_URL = '/static/'
-ALLOWED_HOSTS = ['*']
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

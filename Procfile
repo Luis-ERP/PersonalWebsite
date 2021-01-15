@@ -1,0 +1,1 @@
+web: gunicorn EdgarWebsite.wsgi --log-file -
